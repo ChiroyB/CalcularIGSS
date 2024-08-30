@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de Jubilación</title>
+    <link rel="stylesheet" href="stiloresultado.css">
+</head>
+<body>
+    <div class="result-container">
+        <h2>Resultado del Cálculo de Jubilación</h2>
+        <p id="resultado-jubilacion"></p>
+        <button onclick="volverInicio()">Volver a la Calculadora</button>
+    </div>
+
+    <script>
+        // Obtener datos de la URL POST
+        const params = new URLSearchParams(window.location.search);
+        const nombre = params.get('nombre');
+        const edad = params.get('edad');
+        const anios = params.get('anios');
+        const salario = params.get('salario');
+        const jubilacion = params.get('jubilacion');
+
+        // Mostrar el resultado
+        document.getElementById('resultado-jubilacion').innerHTML = `
+            Hola <strong>${nombre}</strong> 
+            <br>
+            Edad: ${edad} años
+            <br>
+            Años cotizados: ${anios}
+            <br>
+            Promedio de salario mensual: Q${parseFloat(salario).toFixed(2)}<br><br>
+            <strong>Su jubilación mensual aproximada será de Q${parseFloat(jubilacion).toFixed(2)}</strong>.
+        `;
+
+        // regresar
+        function volverInicio() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

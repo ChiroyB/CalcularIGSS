@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #acfc9c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.result-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h2 {
+    color: #bd420a;
+}
+
+#resultado-jubilacion {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #383737;
+}
+
+strong {
+    color: #000000da;
+}
+
+button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007906;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ca7515;
+}

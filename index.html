@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Jubilación de IGSS</title>
+    <link rel="stylesheet" href="estiloprincipal.css">
+</head>
+<body>
+    <div class="info">
+        <p>
+            <h2>Tome en cuenta la siguiente información:</h2>
+            <ul>
+                <li>Debera contantar con 60 años de edad o mas.</li>
+                <li>Los años de pago de IGSS deben ser mayor o igual a 15.</li>
+            </ul>
+        </p>
+    </div>
+
+
+    <div class="container">
+        <h2>Calcular su Jubilación - IGSS Guatemala</h2>
+        <form id="form-jubilacion">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="edad">Edad actual:</label>
+            <input type="number" id="edad" required>
+
+            <label for="anios">Años cotizados al IGSS:</label>
+            <input type="number" id="anios" required>
+
+            <label for="salario">Promedio de salario mensual (en quetzales):</label>
+            <input type="number" id="salario" required>
+
+            <button type="submit">Calcular Jubilación</button>
+        </form>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
